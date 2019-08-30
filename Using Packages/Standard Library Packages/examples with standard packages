@@ -1,0 +1,10 @@
+import math
+
+from math import pi - We can access pi by itself, and we can't reference math because we used a selective import.
+
+from math import pi as p - This would allow us to have access to a p variable that contains the value of pi.
+
+from math import pi, floor, ceil - This would selectively import the pi variable, the floor function, and the ceil function.
+
+from math import * - This would import EVERYTHING (except names starting with an underscore) from the math module into the current namespace. Avoid doing this if possible.
+
