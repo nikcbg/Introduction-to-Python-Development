@@ -1,3 +1,3 @@
 # Introduction-to-Python-Development
 
-Examples of Python code 
+Python code examples
