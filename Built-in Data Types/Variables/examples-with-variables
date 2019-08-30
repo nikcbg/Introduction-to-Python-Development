@@ -1,0 +1,19 @@
+### Declaring varibale
+
+my_str = "This is a simple string"
+
+my_str += " testing"
+my_str
+'This is a simple string testing'
+
+my_str = 1
+print(my_str)
+1
+
+my_str = 1
+my_int = my_str
+my_str = "testing"
+print(my_int)
+1
+print(my_str)
+testing
