@@ -1,0 +1,10 @@
+# This is a full line comment
+
+2 + 2 # This will add the numbers
+
+"""
+This is not a block comment,
+but it will still work when you really need
+for some lines of code to not execute.
+"""
+
