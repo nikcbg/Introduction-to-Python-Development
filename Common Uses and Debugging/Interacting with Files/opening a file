@@ -1,0 +1,15 @@
+'read' method to access the underlying data in the file
+'write' method to place data into the underlying file
+
+file - The path to the file on disk (or where you'd like it to create it)
+mode - How you would like to interact with the file
+
+The file argument is pretty simple, but the mode argument has a variety of options that all work a little differently:
+
+'r' - Opens the file for reading, which is the default mode
+'w' - Opens the file for writing, while removing the existing content (truncating the file)
+'x' - Opens the file to create it, failing if the file already exists
+'a' - Opens the file for writing without truncating, appending any new writes to the end of the file
+'b' - Opens the file in binary mode, in which the file expects to write and return bytes objects
+'t' - Opens the file in text mode, the default mode, where the object expects to write and return strings
+'+' - Opens the file for reading and writing
