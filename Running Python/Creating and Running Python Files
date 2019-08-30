@@ -1,0 +1,8 @@
+vim hello.py
+
+#!/usr/bin/env python3.7
+print("Hello, World")
+
+chmod u+x hello.py
+
+python3.7 hello.py
