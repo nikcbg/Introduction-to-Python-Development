@@ -1,0 +1,21 @@
+pip3.7 install boto3 - installs AWS client library boto3
+
+pip3.7 install --user boto3 - install the package into a directory for packages only for our user using the --user
+
+pip3.7 freeze - view the packages that are already installed
+
+pip3.7 freeze > requirements.txt - exports information into a file
+
+
+### Creating a virtualenv
+mkdir ~/venvs
+python3.7 -m venv ~/venvs/pg
+source ~/venvs/pg/bin/activate
+pip install psycopg2
+(pg) $ deactivate
+
+pip3.7 install --user pipenv
+mkdir ~/database
+cd ~/database
+pipenv --python python3.7
+
