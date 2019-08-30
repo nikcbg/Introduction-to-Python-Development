@@ -1,0 +1,48 @@
+python3.7 - to open Python 3.7 REPL
+
+'single quoted string'
+'single quoted string'
+"double quoted string"
+'double quoted string'
+'''
+... this is a triple
+... quoted string
+... '''
+'\nthis is a triple\nquoted string\n'
+
+
+"pass" + "word"
+'password'
+
+
+"Ha" * 4
+'HaHaHaHa'
+
+"double".find('s')
+-1
+"double".find('u')
+2
+"double".find('bl')
+3
+
+"TeStInG".lower() # "testing"
+'testing'
+"another".lower()
+'another'
+"PassWord123".lower()
+'password123'
+
+
+print("Tab\tDelimited")
+Tab     Delimited
+print("New\nLine")
+New
+Line
+print("Slash\\Character")
+Slash\Character
+print("'Single' in Double")
+'Single' in Double
+print('"Double" in Single')
+"Double" in Single
+print("\"Double\" in Double")
+"Double" in Double
