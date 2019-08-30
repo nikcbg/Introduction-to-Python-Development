@@ -22,3 +22,4 @@ tar xf Python-3.7.2.tar.xz
 cd Python-3.7.2
 ./configure --enable-optimizations
 make altinstall
+sudo pip3.7 install --upgrade pip
