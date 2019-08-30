@@ -1,0 +1,34 @@
+ages = { 'kevin': 59, 'alex': 29, 'bob': 40 }
+ages
+{'kevin': 59, 'alex': 29, 'bob': 40}
+
+ages['kevin']
+59
+
+ages['kayla'] = 21
+ages
+{'kevin': 59, 'alex': 29, 'bob': 40, 'kayla': 21}
+
+del ages['kevin']
+ages
+{'alex': 29, 'bob': 40, 'kayla': 21}
+del ages
+ages
+
+ages = {'kevin': 59, 'bob': 40}
+ages.keys()
+dict_keys(['kevin', 'bob'])
+list(ages.keys())
+['kevin', 'bob']
+ages.values()
+dict_values([59, 40])
+list(ages.values())
+[59, 40]
+
+weights = dict(kevin=160, bob=240, kayla=135)
+weights
+{'kevin': 160, 'bob': 240, 'kayla': 135}
+colors = dict([('kevin', 'blue'), ('bob', 'green'), ('kayla', 'red')])
+colors
+{'kevin': 'blue', 'bob': 'green', 'kayla': 'red'}
+
