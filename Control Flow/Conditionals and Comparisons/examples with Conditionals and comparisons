@@ -1,0 +1,75 @@
+1 < 2
+True
+0 > 2
+False
+2 == 1
+False
+2 != 1
+True
+3.0 >= 3.0
+True
+3.1 <= 3.0
+False
+
+3.1 <= "this"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<=' not supported between instances of 'float' and 'str'
+3 <= 3.1
+True
+1.1 == "1.1"
+False
+1.1 == float("1.1")
+True
+
+"this" == "this"
+True
+"this" == "This"
+False
+"b" > "a"
+True
+"abc" < "b"
+True
+
+2 in [1, 2, 3]
+True
+4 in [1, 2, 3]
+False
+2 not in [1, 2, 3]
+False
+4 not in [1, 2, 3]
+True
+
+if CONDITION:
+    pass
+    
+    
+if True:
+     print("Was True")
+
+Was True
+
+
+if False:
+     print("Was True")
+
+   
+>>> if False:
+     print("Was True")
+ else:
+     print("Was False")
+
+Was False
+
+
+name = "Kevin"
+ if len(name) >= 6:
+     print("name is long")
+ elif len(name) == 5:
+     print("name is 5 characters")
+ elif len(name) >= 4:
+     print("name is 4 or more")
+ else:
+     print("name is short")
+
+name is 5 characters
