@@ -1,0 +1,13 @@
+For our note-taking application to be useful, we're going to need to be able to store data in a database. We'll be using a PostgreSQL database. If you've already created a PostgreSQL server to follow along with the CLI use case, then you can use that same server. If you haven't, then create a new CentOS 7 Cloud Playground and run the following commands after it's been spun up:
+
+$ curl -o db_setup.sh https://raw.githubusercontent.com/linuxacademy/content-python-for-sys-admins/master/helpers/db_setup.sh
+$ chmod +x db_setup.sh
+$ ./db_setup.sh
+During this process, the server will update itself, install Docker, create a PostgreSQL database, and expose it. You'll need to enter your sudo password at least once and you'll also need to pick a database username and password. There's a "sample" database populated with some information, but we won't be using that.
+
+While still connected to the Cloud Playground running the database, run the following command to create the notes database:
+
+NOTE: Set [POSTGRES_USER] to whatever you set it to when running db_setup.sh. For me, that's demo.
+
+$ sudo docker exec -i postgres psql postgres -U [POSTGRES_USER] -c "CREATE DATABASE notes;"
+Now we have a database that our new application can use.
