@@ -31,9 +31,10 @@ def main():
         client = boto3.client('s3')
 timestamp = time.strftime("%Y-%m-%dT%H:%M", time.localtime())
         file_name = pgdump.dump_file_name(args.url, timestamp)
-        print(f"Backing dabase up to {args.destination} in S3 as {file_name}")
+        
         # TODO: create a better name based on the database name and the date
         storage.s3(client, dump.stdout, args.destination, file_name)
     else:
         outfile = open(args.destination, 'wb')
+        print(f"Backing dabase up locally to {outfile.name}")
         storage.local(dump.stdout, outfile)
