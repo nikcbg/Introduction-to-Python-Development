@@ -1,0 +1,18 @@
+Basic Directory Structure
+
+Pipfile (via pipenv install) - To specify our Python version and dependencies
+/templates - To eventually hold Jinja templates that we'll use to render HTML
+/static - To hold static assets like HTML, CSS, and JavaScript files
+
+mkdir projects
+cd ~/projects
+mkdir notes
+cd notes
+pipenv --python python3.7 install flask
+pipenv shell
+
+curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+git init
+git add --all .
+git commit -m 'Initial commit'
+
