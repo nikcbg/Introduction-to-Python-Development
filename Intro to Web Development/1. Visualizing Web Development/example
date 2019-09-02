@@ -1,0 +1,28 @@
+The Life Span of a Web Request
+
+Web development becomes a lot easier once you know how web requests are handled by applications in general. This is the life cycle of a request through a web application:
+
+Make an HTTP request - Whether this is from curl, code, or a web browser, an HTTP request needs to be made. This request will include headers, a body, and the "request method" which will usually be one of the following (there are some other methods infrequently used):
+  - GET - This requests a representation of a specific resource. These requests should only receive data, not cause changes.
+  - HEAD - It's like a GET request, but only receives the headers (no response body).
+  - POST - These submit data to the application, and usually cause a change in the application's state.
+  - PUT - This replaces the current representation of the target resource.
+  - DELETE - Just like it sounds, it deletes the specified resource.
+  - PATCH - These partially modify a resource.
+The application receives the request and routes the request to the proper handler in code.
+The handler executes the expected code and returns the corresponding response. The response includes headers and a body.
+
+
+Aspects of Our Web Application
+For our notes application, we're going to be structuring our code using the MVC pattern: Model, View, Controller. At its core, MVC architecture revolves around 3 concepts:
+
+  - Model - Holds onto the data and business logic:
+    - Ideally, the model holds onto "the brains" of our application.
+  - View - The representation of our business logic:
+    - For our application, the view portion will be the HTML templates that we render and return.
+  - Controller - The input/output interface for the application:
+    - The controller receives requests and utilizes the model and view to display the proper response. In Flask, there are a few different ways to create a "controller," but in its simplest form the controller will actually be the Flask application itself.
+    
+A common problem with MVC architecture is that people put too much logic into the controller and view portions, but we'll do our best to keep the important contents in our Model.
+
+Flask is a micro-framework that doesn't force us to use an MVC architecture, and it really doesn't provide us with any structure for doing so, but we can achieve this distinction on our own by building our own distinct modules.
